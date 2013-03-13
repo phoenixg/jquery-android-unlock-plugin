@@ -1,0 +1,27 @@
+#circle3 {
+width: 100px;
+height: 100px;
+background: blue;
+position: relative;
+}
+
+#circle4 {
+width: 80px;
+height: 80px;
+background: orange;
+position: absolute;
+top: 24%;
+left: 24%;
+display: block;
+border: 3px solid #fff;
+}
+
+.circle {
+border-radius: 50%;
+display: inline-block;
+margin-right: 20px;
+}
+
+
+.stylish{display:block;width:100px;height:100px;border-radius:66px;border:4px double #ccc;font-size:20px;color:#666;line-height:100px;text-align:center;text-decoration:none;text-shadow:0 1px 0 #fff;background:#ddd}
+.stylish:hover{border:4px double #bbb;color:#aaa;text-decoration:none;background:#e6e6e6}
