@@ -1,27 +1,32 @@
-#circle3 {
-width: 100px;
-height: 100px;
-background: blue;
-position: relative;
+#android-unlock-region {
+	text-align: center;
 }
 
-#circle4 {
-width: 80px;
-height: 80px;
-background: orange;
-position: absolute;
-top: 24%;
-left: 24%;
-display: block;
-border: 3px solid #fff;
+#circleOut1, #circleOut2, #circleOut3, 
+#circleOut4, #circleOut5, #circleOut6,
+#circleOut7, #circleOut8, #circleOut9 {
+	width: 60px;
+	height: 60px;
+	background: gray;
+	position: relative;
+}
+
+#circleIn1, #circleIn2, #circleIn3,
+#circleIn4, #circleIn5, #circleIn6,
+#circleIn7, #circleIn8, #circleIn9 {
+	width: 50px;
+	height: 50px;
+	background: black;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	display: block;
 }
 
 .circle {
-border-radius: 50%;
-display: inline-block;
-margin-right: 20px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 20px;
 }
 
-
-.stylish{display:block;width:100px;height:100px;border-radius:66px;border:4px double #ccc;font-size:20px;color:#666;line-height:100px;text-align:center;text-decoration:none;text-shadow:0 1px 0 #fff;background:#ddd}
-.stylish:hover{border:4px double #bbb;color:#aaa;text-decoration:none;background:#e6e6e6}
