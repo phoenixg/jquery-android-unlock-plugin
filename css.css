@@ -7,21 +7,38 @@
 #circleOut7, #circleOut8, #circleOut9 {
 	width: 60px;
 	height: 60px;
-	background: gray;
+	background: #444;
 	position: relative;
+}
+
+.selected {
+	background: #40C527;
 }
 
 #circleIn1, #circleIn2, #circleIn3,
 #circleIn4, #circleIn5, #circleIn6,
 #circleIn7, #circleIn8, #circleIn9 {
-	width: 50px;
-	height: 50px;
-	background: black;
+	width: 52px;
+	height: 52px;
+	background: #222;
 	position: absolute;
-	top: 5px;
-	left: 5px;
+	top: 4px;
+	left: 4px;
 	display: block;
 }
+
+#circleInner1, #circleInner2, #circleInner3,
+#circleInner4, #circleInner5, #circleInner6,
+#circleInner7, #circleInner8, #circleInner9 {
+	width: 24px;
+	height: 24px;
+	background: #eee;
+	position: absolute;
+	top: 13px; /* (50-24)/2 */
+	left: 13px;
+	display: block;
+}
+
 
 .circle {
 	border-radius: 50%;
