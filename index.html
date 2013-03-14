@@ -9,7 +9,33 @@
 
 		<script type='text/javascript' src='./jquery-1.9.1.min.js'></script>
 		<script type='text/javascript'>
+			// 验证是否加载了 jQuery
+			if ($) {
+				$(document).ready(
 
+					function() {
+					$('div[id^=circleOut]').click(
+						function($e) {
+							$e.preventDefault();
+							
+							$(this).css('background-color', '#40C527');
+
+							return false;
+							/*
+							$('li').each(
+								function() {
+									$(this).addClass('myClass1');
+								}
+							);
+							*/
+						}
+					)}
+
+
+
+
+				);
+			}
 		</script>
 	</head>
 	<body>
