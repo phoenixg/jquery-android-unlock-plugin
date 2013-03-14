@@ -18,16 +18,21 @@
 						function($e) {
 							$e.preventDefault();
 							
+							$(this).hover(
+								function(){
+									console.log(1)
+								},
+								function(){
+									console.log(2);
+								}
+							)
+
 							$(this).css('background-color', '#40C527');
 
-							return false;
-							/*
-							$('li').each(
-								function() {
-									$(this).addClass('myClass1');
-								}
-							);
-							*/
+				
+			
+			
+							
 						}
 					)}
 
