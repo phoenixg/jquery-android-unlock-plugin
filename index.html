@@ -13,27 +13,32 @@
 			if ($) {
 				$(document).ready(
 
+					// TODO: 先把id 都去掉，看看能不能换成class
 					function() {
 					$('div[id^=circleOut]').click(
 						function($e) {
+							// 阻止默认的行为
 							$e.preventDefault();
 							
-							$(this).hover(
-								function(){
-									console.log(1)
-								},
-								function(){
-									console.log(2);
-								}
-							)
-
+							// 换色
 							$(this).css('background-color', '#40C527');
 
-				
-			
-			
+
+							// 点击后才注册hover事件
+							$('div[id^=circleOut]').hover(
+								// 
+								function(){
+									console.log('hover1')
+								},
+								// 
+								function(){
+									console.log('hover2');
+								}
+							)
+							
 							
 						}
+
 					)}
 
 
