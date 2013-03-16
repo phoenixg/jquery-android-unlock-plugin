@@ -10,9 +10,7 @@
 	margin-bottom: 20px;
 }
 
-#circleOut1, #circleOut2, #circleOut3, 
-#circleOut4, #circleOut5, #circleOut6,
-#circleOut7, #circleOut8, #circleOut9 {
+.outer {
 	width: 60px;
 	height: 60px;
 	background: #444;
@@ -20,9 +18,7 @@
 }
 
 
-#circleIn1, #circleIn2, #circleIn3,
-#circleIn4, #circleIn5, #circleIn6,
-#circleIn7, #circleIn8, #circleIn9 {
+.middle {
 	width: 52px;
 	height: 52px;
 	background: #222;
@@ -33,9 +29,7 @@
 	margin: 0;
 }
 
-#circleInner1, #circleInner2, #circleInner3,
-#circleInner4, #circleInner5, #circleInner6,
-#circleInner7, #circleInner8, #circleInner9 {
+.inner {
 	width: 24px;
 	height: 24px;
 	background: #eee;
