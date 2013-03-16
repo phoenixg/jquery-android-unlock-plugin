@@ -12,8 +12,6 @@
 			// 验证是否加载了 jQuery
 			if ($) {
 				$(document).ready(
-
-					// TODO: 先把id 都去掉，看看能不能换成class
 					function() {
 					$('div.outer').click(
 						function($e) {
@@ -49,6 +47,20 @@
 		</script>
 	</head>
 	<body>
+
+
+<canvas id="myCanvas" width="578" height="200"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      context.beginPath();
+      context.moveTo(100, 150);
+      context.lineTo(450, 50);
+      context.stroke();
+    </script>
+
+
 
 	<div id="android-unlock-region">
 		<div id="row1">
