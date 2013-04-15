@@ -1,123 +1,124 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en'>
-	<head>
-		<meta http-equiv='content-type' content='text/html; charset=utf-8' />
-		<meta http-equiv='content-language' content='en-us' />
-		<title>jquery-android-unlock-plugin</title>
-		<link type='text/css' href='./css.css' rel='stylesheet' />
+    <head>
+        <meta http-equiv='content-type' content='text/html; charset=utf-8' />
+        <meta http-equiv='content-language' content='en-us' />
+        <title>jquery-android-unlock-plugin</title>
+        <link type='text/css' href='./css.css' rel='stylesheet' />
 
-		<script type='text/javascript' src='./jquery-1.9.1.min.js'></script>
-		<script type='text/javascript'>
-			// 验证是否加载了 jQuery
-			if ($) {
-				$(document).ready(
-					function() {
-					$('div.outer').click(
-						function($e) {
-							// 阻止默认的行为
-							$e.preventDefault();
-							
-							// 换色
-							$(this).css('background-color', '#40C527');
+        <script type='text/javascript' src='./jquery-1.9.1.min.js'></script>
+        <script type='text/javascript'>
+            // 验证是否加载了 jQuery
+            if ($) {
+                $(document).ready(
+                    function() {
+                    $('div.outer').click(
+                        function($e) {
+                            // 阻止默认的行为
+                            $e.preventDefault();
 
-
-							// 点击后才注册hover事件
-							$('div.outer').hover(
-								// 
-								function(){
-									console.log('hover1')
-								},
-								// 
-								function(){
-									console.log('hover2');
-								}
-							)
-							
-							
-						}
-
-					)}
+                            // 换色
+                            $(this).css('background-color', '#40C527');
 
 
+                            // 点击后才注册hover事件
+                            $('div.outer').hover(
+                                //
+                                function(){
+                                    console.log('hover1')
+                                },
+                                //
+                                function(){
+                                    console.log('hover2');
+                                }
+                            )
 
 
-				);
-			}
-		</script>
-	</head>
-	<body>
+                        }
+
+                    )}
 
 
-<canvas id="myCanvas" width="578" height="200"></canvas>
+
+
+                );
+            }
+        </script>
+    </head>
+    <body>
+
+
+    <canvas id="myCanvas" width="500" height="200"></canvas>
     <script>
       var canvas = document.getElementById('myCanvas');
-      var context = canvas.getContext('2d');
+      var ctx = canvas.getContext('2d');
+      ctx.fillRect(0, 0, 1000, 200);
 
-      context.beginPath();
-      context.moveTo(100, 150);
-      context.lineTo(450, 50);
-      context.stroke();
+      ctx.beginPath();
+      ctx.moveTo(100, 150);
+      ctx.lineTo(450, 50);
+      ctx.stroke();
     </script>
 
 
 
-	<div id="android-unlock-region">
-		<div id="row1">
-			<div class="circle outer">
-				<div class="circle middle">
-					<div class="circle inner"></div>
-				</div>
-			</div>
-			<div class="circle outer">
-				<div class="circle middle">
-					<div class="circle inner"></div>
-				</div>
-			</div>
-			<div class="circle outer">
-				<div class="circle middle">
-					<div class="circle inner"></div>
-				</div>
-			</div>
-		</div>
+    <div id="android-unlock-region">
+        <div id="row1">
+            <div class="circle outer">
+                <div class="circle middle">
+                    <div class="circle inner"></div>
+                </div>
+            </div>
+            <div class="circle outer">
+                <div class="circle middle">
+                    <div class="circle inner"></div>
+                </div>
+            </div>
+            <div class="circle outer">
+                <div class="circle middle">
+                    <div class="circle inner"></div>
+                </div>
+            </div>
+        </div>
 
-		<div id="row2">
-			<div class="circle outer">
-				<div class="circle middle">
-					<div class="circle inner"></div>
-				</div>
-			</div>
-			<div class="circle outer">
-				<div class="circle middle">
-					<div class="circle inner"></div>
-				</div>
-			</div>
-			<div class="circle outer">
-				<div class="circle middle">
-					<div class="circle inner"></div>
-				</div>
-			</div>
-		</div>
+        <div id="row2">
+            <div class="circle outer">
+                <div class="circle middle">
+                    <div class="circle inner"></div>
+                </div>
+            </div>
+            <div class="circle outer">
+                <div class="circle middle">
+                    <div class="circle inner"></div>
+                </div>
+            </div>
+            <div class="circle outer">
+                <div class="circle middle">
+                    <div class="circle inner"></div>
+                </div>
+            </div>
+        </div>
 
-		<div id="row3">
-			<div class="circle outer">
-				<div class="circle middle">
-					<div class="circle inner"></div>
-				</div>
-			</div>
-			<div class="circle outer">
-				<div class="circle middle">
-					<div class="circle inner"></div>
-				</div>
-			</div>
-			<div class="circle outer">
-				<div class="circle middle">
-					<div class="circle inner"></div>
-				</div>
-			</div>
-		</div>
-	</div>
+        <div id="row3">
+            <div class="circle outer">
+                <div class="circle middle">
+                    <div class="circle inner"></div>
+                </div>
+            </div>
+            <div class="circle outer">
+                <div class="circle middle">
+                    <div class="circle inner"></div>
+                </div>
+            </div>
+            <div class="circle outer">
+                <div class="circle middle">
+                    <div class="circle inner"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-	</body>
+    </body>
 </html>
