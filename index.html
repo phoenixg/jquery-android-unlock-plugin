@@ -71,9 +71,11 @@
       ctx.fill();
 */
 var line = document.createElement('canvas');
+document.body.appendChild(line);
 line.setAttribute("id", "myline");
-line.setAttribute("width",   "100px");
-line.setAttribute("height", "200px");
+line.setAttribute("width",   100);
+line.setAttribute("height", 200);
+
 var ctx = line.getContext('2d');
 console.log(ctx);
 
